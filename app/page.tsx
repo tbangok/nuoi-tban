@@ -59,7 +59,7 @@ export default function Home() {
     <div className="min-h-screen bg-linear-to-b from-white to-zinc-50">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24 text-center">
-        <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-6 bg-linear-to-r from-zinc-900 to-zinc-600 bg-clip-text text-transparent">
+        <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-6 bg-linear-to-r from-zinc-900 to-zinc-600 bg-clip-text text-transparent pt-12">
           NUÔI TBAN
         </h1>
 
