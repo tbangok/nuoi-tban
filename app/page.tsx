@@ -111,10 +111,14 @@ export default function Home() {
 
       {/* Why You Should Feed Me */}
       <section id="why" className="container mx-auto px-4 py-16 md:py-20">
+        <img
+          src="/trust.png"
+          alt="hay tin em di"
+          className="mx-auto mb-8 rounded-lg shadow-lg h-54"
+        />
         <h2 className="text-4xl md:text-5xl font-black text-center mb-12 text-zinc-900">
           VÌ SAO NÊN TIN EM?
         </h2>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           <Card className="border-2 hover:border-zinc-900 transition-all hover:shadow-lg">
             <CardContent className="p-6">
@@ -173,6 +177,11 @@ export default function Home() {
       {/* Golden Commitments */}
       <section className="bg-zinc-900 text-white py-16 md:py-20">
         <div className="container mx-auto px-4">
+          <img
+            src="/cam-ket.png"
+            alt="hay tin em di"
+            className="mx-auto mb-8 rounded-lg shadow-lg h-36"
+          />
           <h2 className="text-4xl md:text-5xl font-black text-center mb-12">
             CAM KẾT CỦA EM
           </h2>
