@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+import { toast } from "sonner";
 import {
   Zap,
   Shield,
@@ -41,14 +42,14 @@ export default function Home() {
       });
 
       if (response.ok) {
-        alert("Cảm ơn! Em sẽ nhớ ơn bạn mỗi khi đói bụng.");
+        toast.success("Cảm ơn! Em sẽ nhớ ơn bạn mỗi khi đói bụng.");
         setFormData({ name: "", contact: "", amount: "", message: "" });
       } else {
-        alert("Có lỗi xảy ra. Vui lòng thử lại.");
+        toast.error("Có lỗi xảy ra. Vui lòng thử lại.");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("Có lỗi xảy ra. Vui lòng thử lại.");
+      toast.error("Có lỗi xảy ra. Vui lòng thử lại.");
     } finally {
       setIsSubmitting(false);
     }
@@ -73,6 +74,12 @@ export default function Home() {
             Minh bạch 100%. Sao kê chi li từng đồng.
           </p>
         </div>
+
+        <img
+          src="/meo-tien.jpg"
+          alt="lay tien de em di"
+          className="mx-auto mb-8 rounded-lg shadow-lg size-60"
+        />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
           <Button
@@ -331,12 +338,12 @@ export default function Home() {
           <Card className="border-2">
             <CardContent className="p-6 flex flex-col items-center justify-center h-full">
               <p className="text-lg font-bold mb-4 text-center text-zinc-900">
-                Quét mã để chuyển khoản
+                Quét mã để cho em ăn nhé!
               </p>
 
-              <div className="w-64 h-64 bg-zinc-100 border-2 border-zinc-300 rounded-lg flex items-center justify-center mb-4 overflow-hidden">
+              <div className="w-80 h-92 bg-zinc-100 border-2 border-zinc-300 rounded-lg flex items-center justify-center mb-4 overflow-hidden">
                 <img
-                  src="/qr.jpg"
+                  src="/qr.png"
                   alt="QR Code chuyển khoản"
                   className="w-full h-full object-contain"
                 />
@@ -347,7 +354,7 @@ export default function Home() {
                   Số tiền tùy tâm. Không ép buộc.
                 </p>
                 <p className="text-sm text-zinc-600">
-                  20k cũng đủ cho một bữa cơm rồi. Nghiêm túc đấy.
+                  20k cũng đủ cho em no một bữa rồi.
                 </p>
               </div>
             </CardContent>
