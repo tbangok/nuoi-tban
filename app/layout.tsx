@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nuôi em đi chứ",
+  title: "Nuôi em đi ạ",
   description: "Hãy nuôi em - em có thẻ sinh viên",
 };
 
