@@ -294,7 +294,7 @@ export default function Home() {
                   </label>
                   <Input
                     type="text"
-                    placeholder="Để em cảm ơn bạn"
+                    placeholder="Để nhận file báo cáo chi tiêu"
                     value={formData.contact}
                     onChange={(e) =>
                       setFormData({ ...formData, contact: e.target.value })
